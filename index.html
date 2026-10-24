@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행정정보 통합관리 기본법 - 조항 검색</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>행정정보 통합관리 기본법</h1>
+      <p class="subtitle">조항 데이터 검색 및 필터링 시스템</p>
+    </header>
+
+    <div class="search-section">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="검색할 키워드를 입력하세요 (예: 행정안전부, 데이터 표준, 승인 등)...">
+      </div>
+      <div class="status-bar">
+        <span>현재 표시된 조항 수: <strong id="resultCount">15</strong>건 / 전체 15건</span>
+      </div>
+    </div>
+
+    <main class="card-grid" id="cardGrid">
+      <!-- 조항 카드가 JavaScript에 의해 동적으로 생성됩니다 -->
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

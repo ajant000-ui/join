@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+header .subtitle {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* 검색 및 상태 바 */
+.search-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 1.05rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-box input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.status-bar {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #475569;
+  text-align: right;
+}
+
+.status-bar strong {
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+
+/* 카드 그리드 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.article-num {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.article-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.card-body {
+  font-size: 0.95rem;
+  color: #334155;
+  white-space: pre-line;
+  word-break: keep-all;
+  flex-grow: 1;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px;
+  background: #fff;
+  border-radius: 12px;
+  color: #64748b;
+  font-size: 1.1rem;
+}
